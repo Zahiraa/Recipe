@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block titre %}RECIPE{% endblock %}</title>
+        <meta name="keywords" content="{% block motsCles %}{% endblock %}" />
+        <meta name="description" content="{% block description %}{% endblock %}" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ asset('css/recipe.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('pic/logoo.png') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        
+        {% block javascripts %}{% endblock %}
+        
+    </body>
+</html>
